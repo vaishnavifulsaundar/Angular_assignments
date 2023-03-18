@@ -5,6 +5,7 @@ function CheckPrime(iNo1){
     for (let i = 2; i <=iNo1; i++) {
         if(iNo1 % i == 0){
             isPrime = true;
+            break;
         }
         else{
             isPrime= false;
