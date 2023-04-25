@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { MyaddPipe } from './myadd.pipe';
+import { MyMultPipe } from './my-mult.pipe';
+import { MarvellousChkPipe } from './marvellouschk.pipe';
+import { MyRevPipe } from './my-rev.pipe';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MyaddPipe,
+    MyMultPipe,
+    MarvellousChkPipe,
+    MyRevPipe
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
