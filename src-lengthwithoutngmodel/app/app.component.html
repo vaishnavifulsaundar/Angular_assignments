@@ -1,3 +1,6 @@
 
-<input type ="text" [(ngModel)]="data">
-<h1>{{data.length}}</h1>
+<input type ="text" #inputdata>
+<button (click)="acpt(inputdata.value)">send</button>
+<h2>{{inputdata.value}}</h2>
+
+<h2>{{inputdata.value.length}}</h2>
