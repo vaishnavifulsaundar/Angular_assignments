@@ -7,10 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-data ="";
-
-lenOfStr(){
-  console.log(this.data.length);
+public acpt(value: any){
+  console.log(value)
 }
 
 }
